@@ -14,6 +14,7 @@ var controller = require('../controllers/Controller'); // Require controller Reg
 router.get('/', controller.HomeController.welcome);
 router.post('/signup', controller.AuthController.signup);
 router.post('/login', controller.AuthController.login);
+router.get('/sendTextMessage', controller.TextMessagingController.sendTextMessage);
 
 
 

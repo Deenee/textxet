@@ -12,6 +12,10 @@ exports.success = function (data = [], message = 'Operation Successful', status=
 
     return response( data, message, status );
 }
+exports.error = function (data = [], message = 'An error occured.', status='500') {
+
+    return response( data, message, status );
+}
 
 // Invalid credentials
 exports.invalidCredentials = function (data = [], message = 'Invalid Credentials', status='400') {
